@@ -18,6 +18,7 @@ int main(int argc, char* argv[])
   // convert input to double
   // TODO 4: Replace atof(argv[1]) with std::stod(argv[1])
   const double inputValue = atof(argv[1]);
+  // const double inputValue = std::stod(argv[1]);
 
   // calculate square root
   const double outputValue = sqrt(inputValue);
