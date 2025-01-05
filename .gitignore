@@ -1,2 +1,5 @@
 
 .vscode/
+.build/
+
+.CMake_tutorial/Step1/d/
