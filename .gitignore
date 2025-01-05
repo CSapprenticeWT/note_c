@@ -3,3 +3,5 @@
 .build/
 
 .CMake_tutorial/Step1/d/
+/build
+/CMake_tutorial/Step1/d
