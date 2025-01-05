@@ -1,7 +1,4 @@
 
-.vscode/
-.build/
-
-.CMake_tutorial/Step1/d/
+.vscode
 /build
 /CMake_tutorial/Step1/d
