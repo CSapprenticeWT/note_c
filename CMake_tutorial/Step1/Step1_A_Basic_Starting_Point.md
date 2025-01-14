@@ -30,3 +30,12 @@ project(Tutorial)
 add_executable(Tutorial tutorial.cxx)
 ```
 
+### 编译和运行
+
+```shell
+mkdir build
+cd build
+cmake ../Step1
+cmake --build .
+```
+
