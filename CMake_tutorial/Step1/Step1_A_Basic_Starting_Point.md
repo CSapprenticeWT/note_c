@@ -35,7 +35,7 @@ add_executable(Tutorial tutorial.cxx)
 ```shell
 mkdir build
 cd build
-cmake ../Step1
-cmake --build .
+cmake ../Step1		# 配置项目
+cmake --build . 	# 构建项目
 ```
 
