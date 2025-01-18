@@ -37,5 +37,11 @@ mkdir build
 cd build
 cmake ../Step1		# 配置项目
 cmake --build . 	# 构建项目
+
 ```
 
+> 这里的配置项目的主要目的是以下几个步骤：
+>
+> 1. 定位CMakeLists.txt文件 -> 定义项目环境，检查文件结构，检查依赖etc.
+> 2. 检测工具链和系统信息  -> 编译器，目标平台（操作系统），构建工具（Ninja，Visual Studio，Makefile）
+> 3. 生成构建系统文件
