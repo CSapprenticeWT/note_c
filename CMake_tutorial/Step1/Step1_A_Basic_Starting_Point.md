@@ -37,7 +37,9 @@ mkdir build
 cd build
 cmake ../Step1		# 配置项目
 cmake --build . 	# 构建项目
-
+Tutorial 4294967296	# 运行项目
+Tutorial 10
+Tutorial
 ```
 
 > 这里的配置项目的主要目的是以下几个步骤：
