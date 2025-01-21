@@ -47,3 +47,44 @@ Tutorial
 > 1. 定位CMakeLists.txt文件 -> 定义项目环境，检查文件结构，检查依赖etc.
 > 2. 检测工具链和系统信息  -> 编译器，目标平台（操作系统），构建工具（Ninja，Visual Studio，Makefile）
 > 3. 生成构建系统文件
+
+## Exercise 2 - Specifying the C++ Standard
+
+​	添加指定`c++11`的命令，完成步骤4-步骤6。
+
+​	添加`c++11`特性，在`tutorial.cxx`中替换`atof`为`std::stod`。
+
+```c++
+// A simple program that computes the square root of a number
+#include <cmath>
+#include <cstdlib> // TODO 5: Remove this line
+#include <iostream>
+#include <string>
+
+// TODO 11: Include TutorialConfig.h
+
+int main(int argc, char* argv[])
+{
+  if (argc < 2) {
+    // TODO 12: Create a print statement using Tutorial_VERSION_MAJOR
+    //          and Tutorial_VERSION_MINOR
+    std::cout << "Usage: " << argv[0] << " number" << std::endl;
+    return 1;
+  }
+
+  // convert input to double
+  // TODO 4: Replace atof(argv[1]) with std::stod(argv[1])
+  const double inputValue = atof(argv[1]);
+  // const double inputValue = std::stod(argv[1]);
+
+  // calculate square root
+  const double outputValue = sqrt(inputValue);
+  std::cout << "The square root of " << inputValue << " is " << outputValue
+            << std::endl;
+  return 0;
+}
+
+```
+
+
+
